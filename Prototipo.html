@@ -13,14 +13,15 @@
             <ul>
                 <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
                 <li><a href="#menu">Menú</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Pide Aqui</a></li>
-                <li><a href="#Contacto">Contactanos</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <!-- <li><a href="#">Pide Aqui</a></li> -->
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
     </header>
     <br><br>
     <main>
+        <!--PLATOS MAS PEDIDOS (SCROLLING) -->
         <h2 class="menu-titulo">Los populares</h2> <br>
         <div class="carousel">
             <div class="wrap">
@@ -46,7 +47,7 @@
                    </div>
             </div>
         </div> <br>
-
+        <!-- SECCION PLATOS DE COMIDA -->
         <section class="menu" id="menu">
             <div class="menu-contenedor">
                 <h2>Nuestro menú</h2>
@@ -92,18 +93,50 @@
             </div>
         </section>
         <br><br>
-        <section class="Contacto" id="Contacto">
+        <!-- SECCION RESERVAS -->
+        <section class="reservas" id="reservas">
+           <h2>Realiza tu reserva</h2>
+           <div class="contenedor-form">
+                <div class="contenido-form">
+                    <label for="nombre">Nombre(s)</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí...">
+                    <label for="telefono">Telefono</label>
+                    <input type="number" id="telefono" name="telefono" placeholder="Escriba aquí...">
+                    <label for="dia">Día de reserva</label>
+                    <input type="date" id="dia" name="dia">
+                </div>
+                <div class="contenido-form">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Escriba aquí...">
+                    <label for="motivo">Motivo</label>
+                    <select name="motivo" id="motivo">
+                        <option value="cumpleaños">Almuerzo</option>
+                        <option value="reunión">Almuerzo ejecutivo</option>
+                        <option value="aniversario">Cumpleaños</option>
+                        <option value="otro">Evento</option>
+                    </select>
+                    <label for="num-personas">Numero de personas</label>
+                    <input type="number" id="num-personas" name="num-personas" placeholder="Escriba aquí...">
+                    <label for="hora-reserva">Hora de reserva</label>
+                    <input type="time" id="hora-reserva" name="hora-reserva">
+                </div>
+           </div>
+           <button>Hacer Reserva</button>
+        </section>
+        <br><br>
+
+        <section class="contacto" id="contacto">
             <h2>CONTACTANOS</h2> <br>
-            <form action="#">
+            <!-- <form action="#">
                 <input type="text" placeholder="Nombre Completo"> <br> <br>
                 <input type="email" placeholder="Correo Electrónico"> <br> <br>
                 <input type="number" placeholder="Teléfono"> <br> <br>
                 <input type="text" placeholder="Asunto"> <br> <br>
                 <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..."></textarea> <br> <br>
                 <button type="submit">Enviar</button>
-            </form>
+            </form> -->
         </section>
-    </main>Ñ
+    </main>
     <footer></footer>
 </body>
 </html>

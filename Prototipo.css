@@ -1,12 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-
+body{
+  min-height: 100vh;
+  padding-top: 70px;
+  font-family: "Montserrat", sans-serif;
+}
 nav{
+    background-color: #1e4370;
     box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
     padding-right: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul{
@@ -24,7 +37,7 @@ nav li{
 }
 
 nav a{
-    color: rgb(0, 0, 0);
+    color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -41,7 +54,8 @@ nav li:first-child{
 }
 
 nav a:hover{
-    background-color: rgba(154, 156, 158, 0.2);
+    /* background-color: rgba(154, 156, 158, 0.2); */
+    color: #2ca5de;
 }
 
 
@@ -53,7 +67,8 @@ section{
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
-    font-weight: 100;
+    color: #0b167f;
+    font-weight: bold;
 }
 .corousel{
     overflow: hidden;
@@ -118,7 +133,8 @@ display: flex;
 .menu-contenedor h2{
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: bold;
+    color: #0b167f;
 }
 .contenedor-img {
   display: grid; 
@@ -195,4 +211,61 @@ display: flex;
 }
 .area6 { 
     grid-area: area6; 
+}
+.reservas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.reservas button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    background-color: rgb(35, 72, 205);
+    cursor: pointer;
+}
+.reservas button:hover{
+    transform: translate(0, 3px);
+    box-shadow: 10px 10px 10px rgba(25, 5, 207, 0.2);
+}
+.reservas h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0b167f;
+}
+.contenedor-form{
+    max-width: auto;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.contenido-form{
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+}
+.contenido-form label{
+    font-size: 1rem;    
+}
+.contenido-form input, .contenido-form select{
+    width: 90%;
+    height: 30px;
+    border-radius:  4px;
+    border: 1px solid gray;
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0b167f;
 }
