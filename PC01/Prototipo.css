@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    padding-right: 4rem;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    
+}
+
+nav li:first-child{
+    margin-right: auto;
+    padding: 0px 4rem;
+}
+
+nav a:hover{
+    background-color: rgba(154, 156, 158, 0.2);
+}
+
+
+section{
+    padding: 0px 4rem;
+}
+
+.menu-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.corousel{
+    overflow: hidden;
+    width: 600px;
+    padding: 0px 4rem;
+    
+}
+
+.wrap{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 550px;
+    justify-items: stretch;
+    animation: slide 15s linear infinite;
+}
+.wrap-element{
+display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.wrap img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@keyframes slide{
+    to{
+        translate: calc(-1300px);
+    }
+}
+
+.menu{
+    padding: 3rem 4rem;
+}
+.menu .menu-contenedor{
+    max-width: 1200px;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+.menu-item{
+    display: flex;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    text-decoration: none;
+}
+.menu-item img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.menu-contenedor{
+    padding: 0px 4rem;
+}
+.menu-contenedor h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.contenedor-img {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1.2fr 1.1fr 1fr 1fr 1fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    "area1 area1 area1 area1 area2 area2 area2"
+    "area1 area1 area1 area1 area2 area2 area2"
+    "area3 area3 area3 area4 area4 area5 area5"
+    "area3 area3 area3 area4 area4 area5 area5"
+    "area3 area3 area3 area6 area6 area6 area6"
+    "area3 area3 area3 area6 area6 area6 area6"; 
+}
+
+.area1, .area2, .area3, .area4, .area5, .area6 { 
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.area1:hover, .area2:hover, .area3:hover, 
+.area4:hover, .area5:hover, .area6:hover {
+    transform: translateY(-5px);
+}
+.contenedor-img a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    min-height: 200px; /* Altura mínima para las áreas */
+}
+.contenedor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.contenedor-img span {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+    width: 100%;
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.area1 { 
+    grid-area: area1; 
+}
+.area2 { 
+    grid-area: area2; 
+}
+.area3 { 
+    grid-area: area3; 
+}
+.area4 { 
+    grid-area: area4; 
+}
+.area5 { 
+    grid-area: area5; 
+}
+.area6 { 
+    grid-area: area6; 
+}
